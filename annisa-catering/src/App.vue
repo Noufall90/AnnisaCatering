@@ -12,7 +12,7 @@ import AnnisaCatering from './components/AnnisaCatering.vue';
 
 export default {
   components: {
-    AnnisaCatering,
+    AnnisaCatering
   },
 };
 </script>
