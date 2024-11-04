@@ -2,12 +2,12 @@
   <div class="relative min-h-screen bg-[#F8EDE3] font-poppins">
     <NavBar @navigate="navigateTo" />
     <component :is="currentComponent" />
-    <Footer />
     <HeroSection />
     <AboutSection />
     <ServicesSection />
     <Testimonial />
     <GalleryPage />
+    <Footer />
   </div>
 </template>
 
