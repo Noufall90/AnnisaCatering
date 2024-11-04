@@ -3,9 +3,9 @@
       <div class="mx-auto max-w-7xl px-4">
         <h2 class="text-[70px] font-bold text-[#75200D] text-center">Galeri Kami</h2>
         <div class="mt-16 grid grid-cols-3 gap-4">
-          <img src="/src/assets/imagenasikuning.png" alt="Image 1" class="rounded-lg object-cover w-1/3 h-200" />
-          <img src="/src/assets/imagenasikuning.png" alt="Image 2" class="rounded-lg object-cover w-1/3 h-auto" />
-          <img src="/src/assets/imagesambelgoreng.png" alt="Image 3" class="rounded-lg object-cover w-1/3 h-auto" />
+          <img src="/src/assets/imagenasikuning.png" alt="Image 1" class="img" />
+          <img src="/src/assets/imagenasikuning.png" alt="Image 2" class="img" />
+          <img src="/src/assets/imagesambelgoreng.png" alt="Image 3" class="img" />
         </div>
       </div>
     </section>
@@ -16,6 +16,9 @@
   </script>
   
   <style>
-  /* Add styles for Gallery */
+  img {
+  height: 100px;
+  width: auto;
+}
   </style>
   
