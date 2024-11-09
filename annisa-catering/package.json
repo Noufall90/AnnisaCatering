@@ -10,6 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@syncfusion/ej2-base": "^27.1.55",
+    "@syncfusion/ej2-vue-buttons": "^27.1.53",
+    "@syncfusion/ej2-vue-navigations": "^27.1.57",
     "vue": "^3.5.12"
   },
   "devDependencies": {
@@ -19,6 +22,7 @@
     "@vue/test-utils": "^2.4.6",
     "autoprefixer": "^10.4.20",
     "babel-jest": "^29.7.0",
+    "daisyui": "^4.12.14",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.47",

@@ -1,21 +1,40 @@
 <template>
-    <section class="relative h-screen">
-      <div class="absolute inset-0">
-        <img src="/src/assets/imagesambelgoreng.png" alt="Hero Background" class="image_hero" />
-        <div class="absolute inset-0 bg-gradient-to-r from-black via-[#C4C4C4]/40 to-black" />
+  <div class="carousel w-full h-screen">
+    <div id="slide1" class="carousel-item relative w-full h-full">
+      <img
+        src="/src/assets/sambel_goreng_background.jpg"
+        class="w-full h-full object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
       </div>
-    </section>
-  </template>
-  
-  <script setup>
-  // Your script logic
-  </script>
-  
-  <style>
-  .image_hero
-  {
-    height: full;
-    width: full;
-  }
-  </style>
-  
+    </div>
+    <div id="slide2" class="carousel-item relative w-full h-full">
+      <img
+        src="/src/assets/sate_background.jpg"
+        class="w-full h-full object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full h-full">
+      <img
+        src="/src/assets/sambel_goreng_background.jpg"
+        class="w-full h-full object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full h-full">
+      <img
+        src="/src/assets/sate_background.jpg"
+        class="w-full h-full object-cover" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</template>
