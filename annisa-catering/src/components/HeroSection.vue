@@ -26,8 +26,8 @@ import { ref, onMounted, onUnmounted } from "vue";
 const slides = ref([
   { image: "/src/assets/sambel_goreng_background.jpg" },
   { image: "/src/assets/sate_background.jpg" },
-  { image: "/src/assets/sambel_goreng_background.jpg" },
-  { image: "/src/assets/sate_background.jpg" },
+  { image: "/src/assets/DSC06426.jpg" },
+  { image: "/src/assets/DSC06429.jpg" },
 ]);
 
 const currentSlide = ref(0);

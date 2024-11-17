@@ -3,25 +3,26 @@
     <div class="container mx-auto px-4 py-4">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Logo dan Deskripsi -->
-        <div class="flex flex-col items-start">
+        <div class="px-10">
           <div class="flex items-center">
             <img
               class="h-20 w-20 rounded-full"
-              src="https://via.placeholder.com/160x159"
+              src="/src/assets/LOGO 4.jpg"
               alt="Logo Annisa Catering"
             />
-            <h2 class="ml-4 text-5xl font-poppins leading-tight text-white">
+            <h2 class="ml-4 text-[30px] text-left font-poppins leading-tight text-white ">
               Annisa Catering
             </h2>
           </div>
-          <p class="mt-6 text-2xl font-poppins leading-tight text-[#080807]">
+          <p class="mt-4 text-2xl font-poppins text-left leading-tight text-[#080807]">
             A Special Taste for Every Occasion
           </p>
-          <p class="mt-4 text-base leading-relaxed text-[#080807]">
+          <p
+            class="mt-4 text-base leading-relaxed text-[#080807] text-left font-poppins">
             Trusted catering service in Balikpapan, providing quality dishes for
             various events, from weddings to office meetings.
           </p>
-          <div class="mt-8 flex space-x-4">
+          <div class="mt-5 flex space-x-4">
             <!-- Social Media Icons -->
             <a
               v-for="(icon, index) in socialIcons"
@@ -29,9 +30,8 @@
               :href="icon.link"
               target="_blank"
               rel="noopener noreferrer"
-              class="rounded-full flex items-center justify-center px-1 py-1 h-10 w-10 bg-[#ad343e] transition-all hover:bg-[#8d493a]"
-            >
-              <component :is="icon.component" class="h-6 w-6 text-white" />
+              class="rounded-full flex items-center justify-center px-1 py-1 h-14 w-14 bg-[#ad343e] transition-all hover:bg-[#8d493a]">
+              <component :is="icon.component" class="h-7 w-7 text-white" />
             </a>
           </div>
         </div>
@@ -41,24 +41,22 @@
           <h3 class="text-3xl font-poppins text-white">Contact Us</h3>
           <a
             href="mailto:annisacatering@gmail.com"
-            class="mt-8 text-xl text-[#080808] hover:underline font-poppins"
-          >
+            class="mt-8 text-xl text-[#080808] hover:underline font-poppins mb-10">
             annisacatering@gmail.com
           </a>
           <a
             href="https://wa.me/628125361600"
             target="_blank"
             rel="noopener noreferrer"
-            class="mt-4 text-xl text-[#080808] hover:underline font-poppins"
-          >
+            class="mt-4 text-xl text-[#080808] hover:underline font-poppins">
             WhatsApp: +62 812 536 1600
           </a>
         </div>
 
         <!-- Instagram Feed -->
-        <div class="flex flex-col">
-          <h3 class="text-3xl font-poppins text-white">Check Our Instagram</h3>
-          <div class="mt-8 grid grid-cols-2 gap-4">
+        <div class="flex flex-col justify-start">
+          <h3 class="text-xs font-poppins text-white">Check Our Instagram</h3>
+          <div class="px-10 justify-start grid grid-cols-2 gap-4">
             <div
               v-for="(image, index) in instagramImages"
               :key="index"
@@ -75,7 +73,7 @@
       </div>
     </div>
     <div class="bg-[#8d493a] py-1">
-      <p class="text-center text-sm text-white ">
+      <p class="text-center text-sm text-white">
         © {{ new Date().getFullYear() }} Annisa Catering. All rights reserved.
       </p>
     </div>
@@ -84,17 +82,17 @@
 
 <script setup>
 import { ref } from "vue";
-import { Instagram, Phone } from "lucide-vue-next";
+import { Instagram, MessageCircleMore  } from "lucide-vue-next";
 
 const socialIcons = ref([
   { component: Instagram, link: "https://instagram.com/annisacateringbpn" },
-  { component: Phone, link: "tel:+628125361600" },
+  { component: MessageCircleMore, link: "tel:+628125361600" },
 ]);
 
 const instagramImages = ref([
-  "https://via.placeholder.com/194x170",
-  "https://via.placeholder.com/194x170",
-  "https://via.placeholder.com/194x170",
-  "https://via.placeholder.com/194x170",
+  "../../src/assets/imagenasikuning.png",
+  "../../src/assets/imagesambelgoreng.png",
+  "../../src/assets/imagenasiliwet.png",
+  "../../src/assets/imagesateayam.png",
 ]);
 </script>

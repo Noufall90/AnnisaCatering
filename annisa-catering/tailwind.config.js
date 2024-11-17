@@ -24,7 +24,7 @@ module.exports = {
       },
       spacing: {},
       fontFamily: {
-        poppins: "Poppins",
+        poppins: ['Poppins'],  // Pastikan Poppins ada disini
         "dm-sans": "'DM Sans'",
         inter: "Inter",
         "playfair-display": "'Playfair Display'"
