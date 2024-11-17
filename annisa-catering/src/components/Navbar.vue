@@ -1,56 +1,46 @@
 <template>
-  <nav class="fixed top-0 z-50 w-full">
+  <header>
     <div
-      class="mx-auto flex h-[40px] w-[40px] items-left justify-center px-4">
-      <img
-        src="/src/assets/Logo_AnnisaCat.png"
-        alt="Annisa Catering Logo"
-        class="logo_navbar"
-      />
+      class="fixed flex max-w-screen-xl items-center justify-between px-0 py-0 z-50 md:mx-auto w-full">
+      <!-- Logo di kiri -->
+      <a href="#" class="flex items-center whitespace-nowrap text-2xl font-black ml-4">
+        <img
+          src="/src/assets/Logo_AnnisaCat.png"
+          alt="Annisa Catering Logo"
+          class="logo_navbar h-10"
+        />
+      </a>
 
-      <!-- Navigation Menu -->
-      <div
-        class="flex h-full items-center rounded-full bg-[#D0B8A8] px-8 py-2 shadow-lg shadow-gray-300"
-      >
-        <div class="flex gap-[50px] text-[18px] text-[#370B01] font-semibold">
-          <!-- Active link with underline -->
-          <button
-            class="px-6 py-2 bg-[#D0B8A8] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md"
-          >
-            Beranda
-            <span
-              class="absolute bottom-0 left-0 h-[2px] w-full bg-[#370B01]"
-            ></span>
-          </button>
-
-          <!-- Other links without underline -->
-          <button
-            class="px-6 py-2 bg-[#D0B8A8] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md"
-          >
-            Kontak
-          </button>
-
-          <button
-            class="px-6 py-2 bg-[#D0B8A8] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md"
-          >
-            Layanan
-          </button>
-
-          <button
-            class="px-6 py-2 bg-[#D0B8A8] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md"
-          >
-            Galeri
-          </button>
-
-          <button
-            class="px-6 py-2 bg-[#D0B8A8] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md"
-          >
-            Kontak
-          </button>
+      <!-- Navigation Menu di tengah -->
+      <nav aria-label="Header Navigation" class="flex-grow flex justify-center">
+        <div
+          class="flex h-full items-center rounded-full bg-[#D0B8A8] px-0 py-0 shadow-md shadow-gray-900">
+          <ul class="flex px-6 py-0 h-10 space-x-6">
+            <li
+              class="px-6 py-2 text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
+              Beranda
+            </li>
+            <li
+              class="px-6 py-2 text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
+              Kontak
+            </li>
+            <li
+              class="px-6 py-2 text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
+              Layanan
+            </li>
+            <li
+              class="px-6 py-2 text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
+              Galeri
+            </li>
+            <li
+              class="px-6 py-2 text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
+              Kontak
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script setup>
@@ -62,21 +52,3 @@ function navigate(component) {
   emit("navigate", component);
 }
 </script>
-
-<style>
-nav button {
-  color: #613c1a;
-  padding: 8px;
-  border-radius: 4px;
-}
-
-nav button:hover {
-  background-color: #f2e3d5;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.logo_navbar {
-  height: 40px;
-  width: auto;
-}
-</style>

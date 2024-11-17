@@ -20,10 +20,3 @@
 <script setup>
 // Your script logic for Gallery
 </script>
-
-<style>
-.image_testimoni {
-  height: 100px;
-  width: 100px;
-}
-</style>

@@ -27,7 +27,3 @@ function navigateTo(component) {
   currentComponent.value = component
 }
 </script>
-
-<style>
-/* Add your global styles here if needed */
-</style>

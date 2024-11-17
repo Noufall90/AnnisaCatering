@@ -9,7 +9,8 @@
           <h1 class="mt-5 text-[70px] font-bold capitalize text-[#75200D]">
             Annisa Catering
           </h1>
-          <p class="paragraf">Annisa Catering BPN berdiri dengan komitmen untuk menyediakan berbagai pilihan menu berkualitas yang dapat disesuaikan dengan kebutuhan acara Anda, baik dalam jumlah kecil maupun besar. Kami menyediakan beragam pilihan menu yang dapat dinikmati oleh berbagai kalangan, serta disesuaikan dengan anggaran yang dimiliki. Dengan dukungan dari koki-koki berpengalaman, Annisa Catering selalu berupaya menghadirkan hidangan terbaik untuk setiap acara.</p>
+          <p class="paragraf font-light text-[#370B01]">
+            Annisa Catering BPN berdiri dengan komitmen untuk menyediakan berbagai pilihan menu berkualitas yang dapat disesuaikan dengan kebutuhan acara Anda, baik dalam jumlah kecil maupun besar. Kami menyediakan beragam pilihan menu yang dapat dinikmati oleh berbagai kalangan, serta disesuaikan dengan anggaran yang dimiliki. Dengan dukungan dari koki-koki berpengalaman, Annisa Catering selalu berupaya menghadirkan hidangan terbaik untuk setiap acara.</p>
           <ul class="mt-12 space-y-4 text-[30px] font-light text-[#370B01]">
             <li>◑ Halal</li>
             <li>◑ Harga Terjangkau</li>
@@ -18,19 +19,9 @@
           </ul>
         </div>
         <div class="relative">
-          <img src="" alt="Featured Dish" class="rounded-lg object-cover" />
+          <img src="" alt="Featured Dish" class="rounded-lg object-cover"/>
         </div>
       </div>
     </div>
   </section>
 </template>
-
-
-<style>
-  .paragraf {
-  font-weight: lighter ;
-  font-size: 20px;
-  
-}
-
-</style>

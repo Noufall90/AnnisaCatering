@@ -1,88 +1,100 @@
 <template>
-  <footer class="bg-[#D0B8A8]">
-    <div class="mx-auto max-w-7xl px-4 py-16">
-      <div class="grid grid-cols-3 gap-12">
-        <!-- Left Column -->
-        <div>
-          <div class="flex items-center gap-4">
-            <div class="h-[80px] w-[80px] rounded-full bg-[#2B2B2B] p-3">
-              <div class="h-full w-full rounded-full bg-[#FFE15D]" />
-            </div>
-            <h3 class="font-playfair text-[32px] italic text-white">
+  <footer class="bg-[#d0b8a8] font-poppins">
+    <div class="container mx-auto px-4 py-4">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Logo dan Deskripsi -->
+        <div class="flex flex-col items-start">
+          <div class="flex items-center">
+            <img
+              class="h-20 w-20 rounded-full"
+              src="https://via.placeholder.com/160x159"
+              alt="Logo Annisa Catering"
+            />
+            <h2 class="ml-4 text-5xl font-poppins leading-tight text-white">
               Annisa Catering
-            </h3>
+            </h2>
           </div>
-          <h4 class="mt-6 text-2xl font-medium">
-            Rasa Istimewa untuk Setiap Acara
-          </h4>
-          <p class="mt-4 text-base">
-            Layanan catering terpercaya di Balikpapan, menyediakan hidangan
-            berkualitas untuk berbagai acara, mulai dari pernikahan hingga rapat
-            kantor.
+          <p class="mt-6 text-2xl font-poppins leading-tight text-[#080807]">
+            A Special Taste for Every Occasion
           </p>
-          <div class="mt-8 flex gap-4">
+          <p class="mt-4 text-base leading-relaxed text-[#080807]">
+            Trusted catering service in Balikpapan, providing quality dishes for
+            various events, from weddings to office meetings.
+          </p>
+          <div class="mt-8 flex space-x-4">
+            <!-- Social Media Icons -->
             <a
-              v-for="social in ['twitter', 'facebook', 'instagram', 'whatsapp']"
-              :key="social"
-              href="#"
-              class="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#AD343E] transition-colors hover:bg-[#8D493A]"
+              v-for="(icon, index) in socialIcons"
+              :key="index"
+              :href="icon.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full flex items-center justify-center px-1 py-1 h-10 w-10 bg-[#ad343e] transition-all hover:bg-[#8d493a]"
             >
-              <img
-                :src="`/icons/${social}.svg`"
-                :alt="social"
-                class="h-5 w-5"
-              />
+              <component :is="icon.component" class="h-6 w-6 text-white" />
             </a>
           </div>
         </div>
 
-        <!-- Middle Column -->
-        <div>
-          <h3 class="text-[32px] font-bold text-white">Hubungi Kami</h3>
-          <div class="mt-8 space-y-4 text-xl">
-            <p>annisacatering@gmail.com</p>
-            <p>wa.me/628125361600</p>
-          </div>
+        <!-- Informasi Kontak -->
+        <div class="flex flex-col">
+          <h3 class="text-3xl font-poppins text-white">Contact Us</h3>
+          <a
+            href="mailto:annisacatering@gmail.com"
+            class="mt-8 text-xl text-[#080808] hover:underline font-poppins"
+          >
+            annisacatering@gmail.com
+          </a>
+          <a
+            href="https://wa.me/628125361600"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-4 text-xl text-[#080808] hover:underline font-poppins"
+          >
+            WhatsApp: +62 812 536 1600
+          </a>
         </div>
 
-        <!-- Right Column -->
-        <div>
-          <h3 class="text-[32px] font-bold text-white">Cek Instagram Kami</h3>
+        <!-- Instagram Feed -->
+        <div class="flex flex-col">
+          <h3 class="text-3xl font-poppins text-white">Check Our Instagram</h3>
           <div class="mt-8 grid grid-cols-2 gap-4">
             <div
-              v-for="(item, index) in instagramFeed"
+              v-for="(image, index) in instagramImages"
               :key="index"
-              class="group relative overflow-hidden rounded-xl"
+              class="overflow-hidden rounded-xl"
             >
               <img
-                :src="item.image"
-                :alt="item.title"
-                class="h-[170px] w-[194px] object-cover transition-transform duration-300 group-hover:scale-110"
+                :src="image"
+                :alt="`Instagram post ${index + 1}`"
+                class="h-full w-full object-cover"
               />
-              <div
-                class="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-3"
-              >
-                <span class="text-sm font-medium text-white">{{
-                  item.title
-                }}</span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-[#8D493A] py-4">
-      <p class="text-center text-sm text-white">
+    <div class="bg-[#8d493a] py-1">
+      <p class="text-center text-sm text-white ">
         © {{ new Date().getFullYear() }} Annisa Catering. All rights reserved.
       </p>
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-  name: "Footer",
-};
-</script>
+<script setup>
+import { ref } from "vue";
+import { Instagram, Phone } from "lucide-vue-next";
 
-<style></style>
+const socialIcons = ref([
+  { component: Instagram, link: "https://instagram.com/annisacateringbpn" },
+  { component: Phone, link: "tel:+628125361600" },
+]);
+
+const instagramImages = ref([
+  "https://via.placeholder.com/194x170",
+  "https://via.placeholder.com/194x170",
+  "https://via.placeholder.com/194x170",
+  "https://via.placeholder.com/194x170",
+]);
+</script>

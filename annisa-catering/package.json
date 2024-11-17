@@ -13,6 +13,7 @@
     "@syncfusion/ej2-base": "^27.1.55",
     "@syncfusion/ej2-vue-buttons": "^27.1.53",
     "@syncfusion/ej2-vue-navigations": "^27.1.57",
+    "lucide-vue-next": "^0.460.0",
     "vue": "^3.5.12"
   },
   "devDependencies": {
