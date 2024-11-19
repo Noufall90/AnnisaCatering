@@ -49,6 +49,14 @@
   opacity: 1;
 }
 
+.btn-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+}
+
 nav button {
   color: #613c1a;
   padding: 8px;
@@ -127,5 +135,4 @@ button:focus,button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-  
 }
