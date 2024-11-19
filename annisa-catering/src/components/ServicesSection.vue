@@ -51,7 +51,7 @@
       </div>
 
       <!-- Card Deskripsi Detail -->
-      <div v-if="showDetails" class="mt-10 p-6 bg-white rounded-lg shadow-xl max-w-xl mx-auto">
+      <div v-if="showDetails" class="mt-0 p-6 bg-white rounded-lg shadow-xl max-w-xl mx-auto">
         <h3 class="text-[40px] font-poppins font-bold text-[#75200D] mb-4">
           Deskripsi Detail: {{ packages[currentIndex].title }}
         </h3>
