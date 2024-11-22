@@ -7,7 +7,7 @@
     </div>
     <div class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-1 px-0">
       <!-- Bagian Kiri: Foto -->
-      <div class="flex-1 flex justify-center">
+      <div class="flex-1 flex justify-center z-10 mb-10">
         <img
           src="/src/assets/costumer.png"
           alt="Image testimoni"
@@ -40,8 +40,9 @@
       <img
         src="/src/assets/3Graphic Design_2.png"
         alt="Design bawah"
-        class="flex bottom-0 left-0 h-30 w-40"
+        class="absolute bottom-0 left-0 mt-10 h-30 w-40"
       />
+
     </div>
   </section>
 </template>
