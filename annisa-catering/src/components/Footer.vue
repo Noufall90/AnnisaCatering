@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-[#d0b8a8] font-poppins">
     <div class="container mx-auto px-4 py-4">
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 justify-center gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Logo dan Deskripsi -->
         <div class="px-10">
           <div class="flex items-center">
@@ -56,7 +56,7 @@
         <!-- Instagram Feed -->
         <div class="flex flex-col justify-start">
           <h3 class="text-xs font-poppins text-white">Check Our Instagram</h3>
-          <div class="px-10 justify-start grid grid-cols-2 gap-4">
+          <div class="px-10 grid grid-cols-2 gap-4">
             <div
               v-for="(image, index) in instagramImages"
               :key="index"

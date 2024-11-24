@@ -1,5 +1,10 @@
 <template>
   <section class="gallery-section">
+    <img
+        src="/src/assets/Graphic Design_1.png"
+        alt="Design atas"
+        class="absolute top-0 right-0 h-30 w-40 sm:h-30 sm:w-40 lg:h-30 lg:w-40"
+      />
     <div class="container mx-15">
       <div class="text-center mb-15">
         <h2 class="text-[50px] mt-20 mb-5 font-bold text-[#75200D]">
@@ -15,7 +20,7 @@
           <img
             :src="item.image"
             :alt="item.title"
-            class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            class="h-full w-full object-cover transition-transform duration-300 hover:scale-20"
           />
         </div>
       </div>
@@ -46,24 +51,24 @@ const galleryItems = [
 .masonry-layout {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 10px;
 }
 
 .masonry-item {
-  flex: 1 1 calc(33.333% - 1rem); /* Three columns */
+  flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
 }
 
 @media (max-width: 1024px) {
   .masonry-item {
-    flex: 1 1 calc(50% - 1rem); /* Two columns */
-    max-width: calc(50% - 1rem);
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 400px) {
   .masonry-item {
-    flex: 1 1 100%; /* One column */
+    flex: 1 1 100%; 
     max-width: 100%;
   }
 }
