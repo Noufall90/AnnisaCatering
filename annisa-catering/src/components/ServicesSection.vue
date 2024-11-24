@@ -23,7 +23,7 @@
           <div
             v-for="(pkg, index) in [packages[currentIndex]]"
             :key="index"
-            class="relative overflow-hidden rounded-3xl bg-white shadow-lg mb-10"
+            class="relative overflow-hidden rounded-3xl bg-white shadow-lg mb-5"
           >
             <img
               :src="pkg.image"
@@ -51,8 +51,8 @@
       </div>
 
       <!-- Card Deskripsi Detail -->
-      <div v-if="showDetails" class="mt-0 p-6 bg-white rounded-lg shadow-xl max-w-xl mx-auto">
-        <h3 class="text-[40px] font-poppins font-bold text-[#75200D] mb-4">
+      <div v-if="showDetails" class="mt-0 p-6 bg-white rounded-xl shadow-xl max-w-xl mx-auto">
+        <h3 class="text-[40px] font-poppins font-bold text-[#75200D] mb-4 mt-0">
           Deskripsi Detail: {{ packages[currentIndex].title }}
         </h3>
         <p class="text-lg text-[#75200D]">

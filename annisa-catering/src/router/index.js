@@ -10,9 +10,8 @@ const router = createRouter({
             component : Main
         },
         {
-            path:'/gallery', //url ke gallery
+            path:'/gallery', 
             name: 'gallery',
-            // component: (nama halaman utama)
             component: () => import('../views/gallery.vue')
         }
     ],
