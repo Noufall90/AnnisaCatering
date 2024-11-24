@@ -1,5 +1,5 @@
 <template>
-  <section class="relative py-10">
+  <section id="about" class="relative py-10">
     <div class="mx-auto max-w-7xl px-4">
       <img
         src="/src/assets/Graphic Design_1.png"

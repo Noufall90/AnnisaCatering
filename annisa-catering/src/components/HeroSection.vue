@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel w-full h-screen relative">
+  <div id="hero" class="carousel w-full h-screen relative">
     <div
       v-for="(slide, index) in slides"
       :key="index"

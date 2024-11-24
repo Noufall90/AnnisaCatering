@@ -23,20 +23,20 @@
           <ul class="flex px-6 py-0 h-10 space-x-6">
             <RouterLink to="/">
               <button
-                class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none"
-              >
+              @click="scrollToHero"
+                class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
                 Beranda
               </button>
             </RouterLink>
 
             <button
-              class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none"
-            >
+            @click="scrollToAbout"
+              class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
               Tentang Kami
             </button>
             <button
-              class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none"
-            >
+            @click="scrollToTestimonial"
+              class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none">
               Layanan
             </button>
             <RouterLink to="/gallery">
@@ -48,6 +48,7 @@
             </RouterLink>
 
             <button
+              @click="scrollToFooter"
               class="px-6 py-2 bg-[#d0b5a4] text-[#370B01] font-semibold rounded-full hover:bg-[#ffeaab] hover:text-[#3d2610] transition-colors duration-300 shadow-md list-none"
             >
               Kontak
@@ -62,10 +63,80 @@
 <script setup>
 import { defineEmits } from "vue";
 import { RouterLink } from "vue-router";
+import VueScrollTo from 'vue-scrollto';
 
 const emit = defineEmits(["navigate"]);
 
 function navigate(component) {
   emit("navigate", component);
+}
+
+// Corrected scrollToElement method
+function scrollToFooter() {
+  VueScrollTo.scrollTo('#footer', 500, {
+    easing: 'ease-in-out',
+    offset: -100,
+    force: false,
+    cancelable: true,
+    onStart: function () {
+    },
+    onDone: function () {
+    },
+    onCancel: function () {
+    },
+    x: false,
+    y: true
+  });
+}
+
+function scrollToTestimonial() {
+  VueScrollTo.scrollTo('#testimonial', 500, {
+    easing: 'ease-in-out',
+    offset: -100,
+    force: false,
+    cancelable: true,
+    onStart: function () {
+    },
+    onDone: function () {
+    },
+    onCancel: function () {
+    },
+    x: false,
+    y: true
+  });
+}
+
+function scrollToAbout() {
+  VueScrollTo.scrollTo('#about', 500, {
+    easing: 'ease-in-out',
+    offset: -100,
+    force: false,
+    cancelable: true,
+    onStart: function () {
+    },
+    onDone: function () {
+    },
+    onCancel: function () {
+    },
+    x: false,
+    y: true
+  });
+}
+
+function scrollToHero() {
+  VueScrollTo.scrollTo('#hero', 500, {
+    easing: 'ease-in-out',
+    offset: -100,
+    force: false,
+    cancelable: true,
+    onStart: function () {
+    },
+    onDone: function () {
+    },
+    onCancel: function () {
+    },
+    x: false,
+    y: true
+  });
 }
 </script>

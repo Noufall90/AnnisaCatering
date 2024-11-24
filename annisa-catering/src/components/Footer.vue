@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-[#d0b8a8] font-poppins">
+  <footer id="footer" class="bg-[#d0b8a8] font-poppins">
     <div class="container mx-auto px-4 py-4">
       <div class="grid grid-cols-1 justify-center gap-8 md:grid-cols-2 lg:grid-cols-3">
         <!-- Logo dan Deskripsi -->

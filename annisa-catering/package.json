@@ -17,7 +17,8 @@
     "lucide-vue-next": "^0.460.0",
     "swiper": "^11.1.14",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5"
+    "vue-router": "^4.4.5",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
