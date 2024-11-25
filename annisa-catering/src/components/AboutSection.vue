@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="relative py-10">
-    <div class="mx-auto max-w-7xl px-4">
+    <div class="mx-auto max-w-7xl px-5">
       <img
         src="/src/assets/Graphic Design_1.png"
         alt="Design atas"
@@ -40,7 +40,7 @@
           </p>
         </div>
 
-        <aside class="w-full lg:w-auto relative mt-10 lg:mt-0">
+        <aside class="w-full lg:w-auto relative mt-10 lg:mt-0 px-10">
           <img
             src="/src/assets/about_foto.png"
             alt="Featured Dish"

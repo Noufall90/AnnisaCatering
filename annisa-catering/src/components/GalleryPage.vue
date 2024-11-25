@@ -12,11 +12,11 @@
         </h2>
       </div>
 
-      <div class="masonry-layout justify-center">
+      <div class="masonry-layout justify-center px-3">
         <div
           v-for="(item, index) in galleryItems"
           :key="index"
-          class="masonry-item relative overflow-hidden rounded-xl shadow-lg">
+          class="masonry-item relative overflow-hidden rounded-xl shadow-lg justify-center">
           <img
             :src="item.image"
             :alt="item.title"
@@ -57,6 +57,7 @@ const galleryItems = [
 .masonry-item {
   flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
+  height: 600px;
 }
 
 @media (max-width: 1024px) {
