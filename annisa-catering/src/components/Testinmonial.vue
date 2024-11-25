@@ -5,7 +5,7 @@
         Apa kata Customer kami
       </h2>
     </div>
-      <div class="pb-10 flex flex-col md:flex-row items-center justify-center gap-2 px-4">
+      <div class="pb-6 flex flex-col md:flex-row items-center justify-center gap-2 px-4">
         <!-- Bagian Kiri: Foto -->
         <div class="flex-1 flex justify-center z-10 pb-8 md:mb-0">
           <img

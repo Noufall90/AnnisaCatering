@@ -71,7 +71,7 @@ function navigate(component) {
   emit("navigate", component);
 }
 
-// Corrected scrollToElement method
+
 function scrollToFooter() {
   VueScrollTo.scrollTo('#footer', 500, {
     easing: 'ease-in-out',
