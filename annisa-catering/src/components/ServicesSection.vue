@@ -1,10 +1,15 @@
 <template>
-  <section id="testimonial" >
+  <section id="testimonial">
     <div class="relative">
       <img
         src="/src/assets/2Graphic Design_1.png"
         alt="Design atas"
-        class="absolute top-0 right-0 h-30 w-28 sm:h-30 sm:w-28 lg:h-30 lg:w-28"
+        class="absolute top-0 right-0 h-30 w-24 sm:h-30 sm:w-24 lg:h-30 lg:w-24"
+      />
+      <img
+        src="/src/assets/2Graphic Design_2.png"
+        alt="Design bawah"
+        class="absolute bottom-0 left-0 h-30 w-40 sm:h-30 sm:w-40 lg:h-30 lg:w-40"
       />
       <div class="max-w-7xl mx-auto z-10 px-10 pb-8 text-center">
         <h2
@@ -53,17 +58,20 @@
         </div>
 
         <!-- Card Deskripsi Detail -->
-        <div
-          v-if="showDetails"
-          class="mt-0 p-6 bg-white rounded-xl shadow-xl max-w-xl mx-auto">
-          <h3
-            class="text-[30px] sm:text-[40px] font-poppins font-bold text-[#75200D] mb-4 mt-0"
+        <div class="relative">
+          <div
+            v-if="showDetails"
+            class="mt-0 p-6 bg-white rounded-xl shadow-xl max-w-xl mx-auto"
           >
-            Deskripsi Detail: {{ packages[currentIndex].title }}
-          </h3>
-          <p class="text-base sm:text-lg text-[#75200D]">
-            {{ packages[currentIndex].description }}
-          </p>
+            <h3
+              class="text-[30px] sm:text-[40px] font-poppins font-bold text-[#75200D] mb-4 mt-0"
+            >
+              Deskripsi Detail: {{ packages[currentIndex].title }}
+            </h3>
+            <p class="text-base sm:text-lg text-[#75200D]">
+              {{ packages[currentIndex].description }}
+            </p>
+          </div>
         </div>
 
         <div
@@ -83,11 +91,6 @@
           </a>
         </div>
       </div>
-      <img
-        src="/src/assets/2Graphic Design_2.png"
-        alt="Design bawah"
-        class="absolute bottom-0 left-0 h-30 w-40 sm:h-30 sm:w-40 lg:h-30 lg:w-40"
-      />
     </div>
   </section>
 </template>
@@ -121,17 +124,17 @@ const packages = [
 ];
 
 const currentIndex = ref(0);
-const showDetails = ref(false); // Variabel untuk menampilkan atau menyembunyikan detail
+const showDetails = ref(false);
 
 const prevSlide = () => {
   currentIndex.value =
     currentIndex.value > 0 ? currentIndex.value - 1 : packages.length - 1;
-  showDetails.value = false; // Menyembunyikan detail saat berganti slide
+  showDetails.value = false;
 };
 
 const nextSlide = () => {
   currentIndex.value =
     currentIndex.value < packages.length - 1 ? currentIndex.value + 1 : 0;
-  showDetails.value = false; // Menyembunyikan detail saat berganti slide
+  showDetails.value = false;
 };
 </script>

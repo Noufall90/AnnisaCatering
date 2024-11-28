@@ -1,25 +1,24 @@
 <template>
   <section class="relative">
-    <div class="max-auto">
+
+    <div class="relative max-auto z-10">
       <h2 class="text-[50px] mt-0 pt-10 font-bold text-[#75200D] text-center">
         Apa kata Customer kami
       </h2>
     </div>
     <div
-      class="pb-6 flex flex-col md:flex-row items-center justify-center gap-2 px-4">
-            <!-- Decorative Graphics -->
-             <div>
+      class="pb-4 flex flex-col md:flex-row items-center justify-center gap-2 px-4">
+      <!-- Decorative Graphics -->
         <img
           src="/src/assets/3Graphic Design_1.png"
           alt="Design atas"
-          class="absolute top-0 right-0 h-30 w-40 sm:h-30 sm:w-40 lg:h-30 lg:w-40"
+          class="absolute top-0 right-0 h-36 w-32 sm:h-32 sm:w-40 "
         />
         <img
           src="/src/assets/3Graphic Design_2.png"
           alt="Design bawah"
-          class="absolute bottom-0 left-0 h-30 w-40 sm:h-30 sm:w-40 lg:h-30 lg:w-40"
+          class="absolute bottom-0 left-0 h-36 w-32 sm:h-36 sm:w-40 "
         />
-      </div>
       <!-- Bagian Kiri: Foto -->
       <div class="flex-1 flex justify-center z-10 pb-8 md:mb-0">
         <img
@@ -47,7 +46,7 @@
       >
         <a
           @click="nextSlide"
-          class="btn btn-circle bg-[#f5e5d8] text-[#75200D] text-[25px] rounded-full shadow-2xl px-2 py-2 mr-10"
+          class="btn btn-circle bg-[#f5e5d8] text-[#75200D] text-[25px] rounded-full shadow-2xl px-2 py-2"
         >
           ❯
         </a>

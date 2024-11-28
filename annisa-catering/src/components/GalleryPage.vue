@@ -1,5 +1,5 @@
-<template>
-  <section class="gallery-section">
+<template  >
+  <section id="gallerypage" class="gallery-section">
     <img
         src="/src/assets/Graphic Design_1.png"
         alt="Design atas"

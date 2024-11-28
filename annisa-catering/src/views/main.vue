@@ -1,5 +1,5 @@
 <template>
-    <div class="relative min-h-screen bg-[#F8EDE3] font-poppins">
+    <div class="relative min-h-screen p-0 bg-[#F8EDE3] font-poppins">
         <NavBar />
         <HeroSection />
         <AboutSection />

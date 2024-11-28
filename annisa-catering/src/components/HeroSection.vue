@@ -4,7 +4,7 @@
       v-for="(slide, index) in slides"
       :key="index"
       :id="'slide' + (index + 1)"
-      class="carousel-item absolute w-full h-full transition-opacity duration-700"
+      class="carousel-item absolute flex w-full h-full transition-opacity duration-700"
       :class="{ 'opacity-100 z-10': currentSlide === index, 'opacity-0 z-0': currentSlide !== index }"
     >
       <img
@@ -43,7 +43,7 @@ function prevSlide() {
 
 let interval;
 onMounted(() => {
-  interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+  interval = setInterval(nextSlide, 5000); 
 });
 
 onUnmounted(() => {
