@@ -25,7 +25,7 @@
 
         <!-- Informasi Kontak -->
         <div class="flex flex-col">
-          <h3 class="text-3xl font-poppins text-white">Hubungi kami</h3>
+          <h3 class="text-[24px] font-poppins text-white">Hubungi kami</h3>
           <a
             href="mailto:annisacatering@gmail.com"
             class="mt-8 text-xl text-[#080808] hover:underline font-poppins mb-10">
@@ -42,7 +42,7 @@
 
         <!-- Instagram Feed -->
         <div class="flex flex-col justify-start">
-          <h3 class="text-xs font-poppins text-white">Lihat Instagram kita</h3>
+          <h3 class="text-[24px] font-poppins text-white">Lihat Instagram kita</h3>
           <div class="px-10 grid grid-cols-2 gap-4">
             <div
               v-for="(image, index) in instagramImages"
@@ -71,7 +71,7 @@
           </div>
       </div>
     </div>
-    <div class="bg-[#8d493a] py-1">
+    <div class="bg-[#391912] py-1">
       <p class="text-center text-sm text-white">
         © {{ new Date().getFullYear() }} Annisa Catering. All rights reserved.
       </p>
