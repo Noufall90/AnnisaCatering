@@ -27,9 +27,9 @@
         <div class="flex flex-col">
           <h3 class="text-[24px] font-poppins text-white">Hubungi kami</h3>
           <a
-            href="mailto:annisacatering@gmail.com"
+            href="https://www.instagram.com/annisacateringbpn/"
             class="mt-8 text-xl text-[#080808] hover:underline font-poppins mb-10">
-            annisacatering@gmail.com
+            @annisacaterinbpn
           </a>
           <a
             href="https://wa.me/628125361600"

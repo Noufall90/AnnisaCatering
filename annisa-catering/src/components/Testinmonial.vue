@@ -60,18 +60,19 @@ import { ref } from "vue";
 
 const customerFeedback = [
   {
-    name: "Kimi",
+    name: "Siti Rahmawati",
     testimonial:
-      "Kimi memberikan pelayanan yang sangat memuaskan dan berkualitas!",
+      "Makanannya enak banget, pelayanannya cepat dan ramah! Semua tamu puas, terima kasih Annisa Catering!",
   },
   {
-    name: "No",
-    testimonial: "Produk ini luar biasa dan harganya sangat terjangkau.",
+    name: "Budi Prasetyo",
+    testimonial:
+      "Layanan super profesional, makanan berkualitas, dan selalu tepat waktu. Sangat recommended!",
   },
   {
-    name: "Nawa",
+    name: "Rina",
     testimonial:
-      "Saya pasti akan merekomendasikan ini kepada teman-teman saya!",
+      "Acara jadi lancar berkat Annisa Catering. Makanan lezat dan timnya sangat membantu!",
   },
 ];
 
