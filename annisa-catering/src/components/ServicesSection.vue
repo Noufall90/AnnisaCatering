@@ -105,7 +105,7 @@ const packages = [
     image: "/src/assets/imagesateayam copy.png",
     price: "Mulai dari 15.000 / Porsi",
     description:
-      "Deskripsi lengkap tentang Paket Sekolah. Paket ini cocok untuk kegiatan sekolah dengan pilihan menu variatif.",
+      "Paket ini cocok untuk kegiatan sekolah dengan pilihan menu variatif beserta snack yang disukai anak-anak.",
   },
   {
     title: "Prasmanan",
