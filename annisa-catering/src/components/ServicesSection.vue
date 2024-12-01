@@ -15,7 +15,7 @@
         <h2
           class="text-[40px] sm:text-[50px] font-poppins font-bold text-[#75200D] mt-0 mb-0"
         >
-          Paket
+          Paket 
         </h2>
         <h2
           class="text-[40px] sm:text-[50px] font-poppins font-bold text-[#75200D] mt-0 mb-0"

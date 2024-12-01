@@ -15,7 +15,6 @@
           <nav class="hidden md:flex flex-grow justify-center">
             <ul class="flex space-x-4 px-2 py-1 list-none">
               <li v-for="item in navItems" :key="item.name">
-                <!-- Check if the item is a router link or requires scroll -->
                 <template v-if="item.isRouterLink">
                   <RouterLink
                     :to="item.route"
@@ -61,7 +60,7 @@
       </div>
     </div>
 
-    <!-- Mobile menu, show/hide based on menu state -->
+    <!-- Mobile menu -->
     <div v-if="isMobileMenuOpen" class="md:hidden bg-[#D0B8A8] rounded-lg">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <template v-for="item in navItems" :key="item.name">
